@@ -1,0 +1,271 @@
+/* ===========================================================
+   ARU NATURALS
+   STYLE.CSS
+   PART 1
+   Global + Top Bar
+===========================================================*/
+
+
+/* ===========================
+   Google Font
+===========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ===========================
+   Reset
+===========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ===========================
+   Variables
+===========================*/
+
+:root{
+
+    --primary:#2E7D32;
+    --primary-dark:#1B5E20;
+    --secondary:#4CAF50;
+    --accent:#D4AF37;
+
+    --white:#ffffff;
+    --black:#222222;
+
+    --text:#555555;
+
+    --border:#e6e6e6;
+
+    --background:#F9F9F6;
+
+    --transition:.30s ease;
+
+    --shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+/* ===========================
+   Body
+===========================*/
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--black);
+
+    line-height:1.6;
+
+}
+
+
+/* ===========================
+   Image
+===========================*/
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+/* ===========================
+   Links
+===========================*/
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+/* ===========================
+   List
+===========================*/
+
+ul{
+
+    list-style:none;
+
+}
+
+
+/* ===========================
+   Container
+===========================*/
+
+.container{
+
+    width:90%;
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+
+/* ===========================
+   Section
+===========================*/
+
+section{
+
+    padding:80px 0;
+
+}
+
+
+/* ===========================
+   Common Button
+===========================*/
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    outline:none;
+
+    font-family:inherit;
+
+}
+
+
+/* ===========================================================
+                    TOP BAR
+===========================================================*/
+
+.top-bar{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    font-size:14px;
+
+}
+
+
+.top-bar .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    min-height:45px;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.top-bar-left,
+
+.top-bar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+.top-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    transition:var(--transition);
+
+}
+
+
+.top-link:hover{
+
+    color:#FFD54F;
+
+}
+
+
+.top-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+
+.divider{
+
+    width:1px;
+
+    height:16px;
+
+    background:rgba(255,255,255,.35);
+
+}
+
+
+.icon{
+
+    font-size:15px;
+
+}
+
+
+/* ===========================
+   Mobile
+===========================*/
+
+@media(max-width:768px){
+
+    .top-bar .container{
+
+        justify-content:center;
+
+        padding:10px 0;
+
+    }
+
+    .top-bar-left,
+
+    .top-bar-right{
+
+        width:100%;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+}
